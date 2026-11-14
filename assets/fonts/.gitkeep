@@ -1,0 +1,1 @@
+# Drop .ttf or .otf files in this folder, then load them with load_font("name.ttf", size).

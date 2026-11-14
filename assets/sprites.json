@@ -1,0 +1,223 @@
+{
+  "player/player_walk.png": {
+    "columns": 8,
+    "rows": [
+      "move"
+    ],
+    "anchor": [
+      0.5,
+      0.7486187845303868
+    ]
+  },
+  "player/player_action.png": {
+    "columns": 4,
+    "rows": [
+      "jump",
+      "keyboard_swing",
+      "action_row_3",
+      "heal"
+    ],
+    "anchor": [
+      0.5,
+      0.96
+    ]
+  },
+  "player/effect_asset/dust.png": {
+    "columns": 4,
+    "rows": [
+      "dust_1",
+      "dust_2",
+      "dust_3"
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ]
+  },
+  "player/effect_asset/effect1.png": {
+    "columns": 4,
+    "rows": [
+      "swing_1",
+      "swing_2",
+      "parry_flash",
+      "heal_glow"
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ]
+  },
+  "player/effect_asset/effect2.png": {
+    "columns": 4,
+    "rows": [
+      "key_projectile",
+      "long_projectile",
+      "key_fragments",
+      "impact_sparks",
+      "impact_dust"
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ]
+  },
+  "player/effect_asset/effect3.png": {
+    "columns": 4,
+    "rows": [
+      "blue_sparks",
+      "smoke",
+      "white_particles",
+      "heal_particles"
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ]
+  },
+  "boss/midterm/boss1.png": {
+    "columns": 4,
+    "rows": [
+      "midterm_idle",
+      "midterm_walk",
+      "midterm_papers",
+      "midterm_red_slash"
+    ],
+    "anchor": [
+      0.5,
+      0.96
+    ]
+  },
+  "boss/midterm/boss2.png": {
+    "columns": 4,
+    "rows": [
+      "midterm_paper_attack",
+      "midterm_lunge",
+      "midterm_red_energy",
+      "midterm_recover"
+    ],
+    "anchor": [
+      0.5,
+      0.96
+    ]
+  },
+  "boss/midterm/boss3.png": {
+    "columns": 4,
+    "rows": [
+      "midterm_react",
+      "midterm_fall"
+    ],
+    "anchor": [
+      0.5,
+      0.96
+    ]
+  },
+  "boss/boss_effect/attack_effect.png": {
+    "columns": 4,
+    "rows": [
+      "midterm_debris",
+      "midterm_loose_papers",
+      "midterm_paper_trail",
+      "midterm_slash_fx"
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ]
+  },
+  "boss/boss_effect/attack_effect2.png": {
+    "columns": 4,
+    "rows": [
+      "midterm_red_sigil",
+      "midterm_paper_swirl"
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ]
+  },
+  "boss/final/boss_final1.png": {
+    "columns": 4,
+    "rows": [
+      "final_transform",
+      "final_hover",
+      "final_slash",
+      "final_papers"
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ]
+  },
+  "boss/final/boss_final2.png": {
+    "columns": 4,
+    "rows": [
+      "final_charge",
+      "final_dash",
+      "final_energy",
+      "final_cast"
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ]
+  },
+  "boss/final/boss_final3.png": {
+    "columns": 4,
+    "rows": [
+      "final_react",
+      "final_fall"
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ]
+  },
+  "boss/final/boss_final_effect.png": {
+    "columns": 4,
+    "rows": [
+      "final_swirl_1",
+      "final_swirl_2",
+      "final_slash_fx",
+      "final_projectile",
+      "final_sigil"
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ]
+  },
+  "boss/final/boss_final_effect 2.png": {
+    "columns": 4,
+    "rows": [
+      "final_dash_fx",
+      "final_vortex",
+      "final_burst",
+      "final_aura",
+      "final_fade"
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ]
+  },
+  "boss/boss_child/boss_child_fly.png": {
+    "columns": 4,
+    "rows": [
+      "wraith_fly"
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ]
+  },
+  "boss/boss_child/boss_child_attack.png": {
+    "columns": 4,
+    "rows": [
+      "wraith_attack"
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ]
+  }
+}

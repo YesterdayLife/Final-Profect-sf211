@@ -1,0 +1,1255 @@
+{
+  "format": "thai-campus-platformer-atlas-v1",
+  "tile_size": [
+    32,
+    32
+  ],
+  "images": {
+    "backgrounds/campus_far.png": {
+      "width": 1024,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    "backgrounds/campus_mid.png": {
+      "width": 1024,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    "backgrounds/campus_near.png": {
+      "width": 1024,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    "foreground/campus_foreground.png": {
+      "width": 384,
+      "height": 128,
+      "mode": "RGBA"
+    },
+    "props/campus_corridor.png": {
+      "width": 512,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    "props/computer_lab.png": {
+      "width": 512,
+      "height": 384,
+      "mode": "RGBA"
+    },
+    "props/lecture_room.png": {
+      "width": 512,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    "props/library.png": {
+      "width": 512,
+      "height": 384,
+      "mode": "RGBA"
+    },
+    "props/student_activity_room.png": {
+      "width": 512,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    "tilesets/academic_corridor.png": {
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    }
+  },
+  "tileset": {
+    "image": "tilesets/academic_corridor.png",
+    "cell_size": [
+      32,
+      32
+    ],
+    "columns": 8,
+    "rows": 8,
+    "assets": {
+      "floor_left_cap": {
+        "rect": [
+          0,
+          0,
+          32,
+          32
+        ]
+      },
+      "floor_center_a": {
+        "rect": [
+          32,
+          0,
+          32,
+          32
+        ]
+      },
+      "floor_center_b": {
+        "rect": [
+          64,
+          0,
+          32,
+          32
+        ]
+      },
+      "floor_right_cap": {
+        "rect": [
+          96,
+          0,
+          32,
+          32
+        ]
+      },
+      "floor_transition_a": {
+        "rect": [
+          128,
+          0,
+          32,
+          32
+        ]
+      },
+      "floor_transition_b": {
+        "rect": [
+          160,
+          0,
+          32,
+          32
+        ]
+      },
+      "floor_worn_a": {
+        "rect": [
+          192,
+          0,
+          32,
+          32
+        ]
+      },
+      "floor_worn_b": {
+        "rect": [
+          224,
+          0,
+          32,
+          32
+        ]
+      },
+      "oneway_left_cap": {
+        "rect": [
+          0,
+          32,
+          32,
+          32
+        ]
+      },
+      "oneway_center_a": {
+        "rect": [
+          32,
+          32,
+          32,
+          32
+        ]
+      },
+      "oneway_center_b": {
+        "rect": [
+          64,
+          32,
+          32,
+          32
+        ]
+      },
+      "oneway_right_cap": {
+        "rect": [
+          96,
+          32,
+          32,
+          32
+        ]
+      },
+      "oneway_worn_a": {
+        "rect": [
+          128,
+          32,
+          32,
+          32
+        ]
+      },
+      "oneway_worn_b": {
+        "rect": [
+          160,
+          32,
+          32,
+          32
+        ]
+      },
+      "oneway_worn_c": {
+        "rect": [
+          192,
+          32,
+          32,
+          32
+        ]
+      },
+      "oneway_worn_d": {
+        "rect": [
+          224,
+          32,
+          32,
+          32
+        ]
+      },
+      "wall_center": {
+        "rect": [
+          0,
+          64,
+          32,
+          32
+        ]
+      },
+      "wall_left_edge": {
+        "rect": [
+          32,
+          64,
+          32,
+          32
+        ]
+      },
+      "wall_right_edge": {
+        "rect": [
+          64,
+          64,
+          32,
+          32
+        ]
+      },
+      "wall_cracked": {
+        "rect": [
+          96,
+          64,
+          32,
+          32
+        ]
+      },
+      "wall_left_worn": {
+        "rect": [
+          128,
+          64,
+          32,
+          32
+        ]
+      },
+      "wall_right_worn": {
+        "rect": [
+          160,
+          64,
+          32,
+          32
+        ]
+      },
+      "wall_fracture": {
+        "rect": [
+          192,
+          64,
+          32,
+          32
+        ]
+      },
+      "wall_vent": {
+        "rect": [
+          224,
+          64,
+          32,
+          32
+        ]
+      },
+      "corner_outer_left_top": {
+        "rect": [
+          0,
+          96,
+          32,
+          32
+        ]
+      },
+      "corner_outer_right_top": {
+        "rect": [
+          32,
+          96,
+          32,
+          32
+        ]
+      },
+      "corner_inner_left_top": {
+        "rect": [
+          64,
+          96,
+          32,
+          32
+        ]
+      },
+      "corner_inner_right_top": {
+        "rect": [
+          96,
+          96,
+          32,
+          32
+        ]
+      },
+      "floor_wall_join_left": {
+        "rect": [
+          128,
+          96,
+          32,
+          32
+        ]
+      },
+      "floor_wall_join_right": {
+        "rect": [
+          160,
+          96,
+          32,
+          32
+        ]
+      },
+      "ceiling_wall_join_left": {
+        "rect": [
+          192,
+          96,
+          32,
+          32
+        ]
+      },
+      "ceiling_wall_join_right": {
+        "rect": [
+          224,
+          96,
+          32,
+          32
+        ]
+      },
+      "beam_left_end": {
+        "rect": [
+          0,
+          128,
+          32,
+          32
+        ]
+      },
+      "beam_center_a": {
+        "rect": [
+          32,
+          128,
+          32,
+          32
+        ]
+      },
+      "beam_center_b": {
+        "rect": [
+          64,
+          128,
+          32,
+          32
+        ]
+      },
+      "beam_support_a": {
+        "rect": [
+          96,
+          128,
+          32,
+          32
+        ]
+      },
+      "beam_support_b": {
+        "rect": [
+          128,
+          128,
+          32,
+          32
+        ]
+      },
+      "ceiling_underside_a": {
+        "rect": [
+          160,
+          128,
+          32,
+          32
+        ]
+      },
+      "ceiling_underside_b": {
+        "rect": [
+          192,
+          128,
+          32,
+          32
+        ]
+      },
+      "beam_right_end": {
+        "rect": [
+          224,
+          128,
+          32,
+          32
+        ]
+      },
+      "stair_step_1": {
+        "rect": [
+          0,
+          160,
+          32,
+          32
+        ]
+      },
+      "stair_step_2": {
+        "rect": [
+          32,
+          160,
+          32,
+          32
+        ]
+      },
+      "stair_step_3": {
+        "rect": [
+          64,
+          160,
+          32,
+          32
+        ]
+      },
+      "stair_step_4": {
+        "rect": [
+          96,
+          160,
+          32,
+          32
+        ]
+      },
+      "stair_step_5": {
+        "rect": [
+          128,
+          160,
+          32,
+          32
+        ]
+      },
+      "stair_step_6": {
+        "rect": [
+          160,
+          160,
+          32,
+          32
+        ]
+      },
+      "stair_landing_a": {
+        "rect": [
+          192,
+          160,
+          32,
+          32
+        ]
+      },
+      "stair_landing_b": {
+        "rect": [
+          224,
+          160,
+          32,
+          32
+        ]
+      },
+      "ladder_top": {
+        "rect": [
+          0,
+          192,
+          32,
+          32
+        ]
+      },
+      "ladder_middle_a": {
+        "rect": [
+          32,
+          192,
+          32,
+          32
+        ]
+      },
+      "ladder_bottom": {
+        "rect": [
+          64,
+          192,
+          32,
+          32
+        ]
+      },
+      "ladder_middle_b": {
+        "rect": [
+          96,
+          192,
+          32,
+          32
+        ]
+      },
+      "ladder_shaft_left": {
+        "rect": [
+          128,
+          192,
+          32,
+          32
+        ]
+      },
+      "ladder_shaft_right": {
+        "rect": [
+          160,
+          192,
+          32,
+          32
+        ]
+      },
+      "ladder_trim_a": {
+        "rect": [
+          192,
+          192,
+          32,
+          32
+        ]
+      },
+      "ladder_trim_b": {
+        "rect": [
+          224,
+          192,
+          32,
+          32
+        ]
+      },
+      "secret_intact": {
+        "rect": [
+          0,
+          224,
+          32,
+          32
+        ]
+      },
+      "secret_cracked": {
+        "rect": [
+          32,
+          224,
+          32,
+          32
+        ]
+      },
+      "secret_fractured": {
+        "rect": [
+          64,
+          224,
+          32,
+          32
+        ]
+      },
+      "secret_open_left": {
+        "rect": [
+          96,
+          224,
+          32,
+          32
+        ]
+      },
+      "secret_open_right": {
+        "rect": [
+          128,
+          224,
+          32,
+          32
+        ]
+      },
+      "secret_cracked_alt": {
+        "rect": [
+          160,
+          224,
+          32,
+          32
+        ]
+      },
+      "maintenance_closed": {
+        "rect": [
+          192,
+          224,
+          32,
+          32
+        ]
+      },
+      "maintenance_open": {
+        "rect": [
+          224,
+          224,
+          32,
+          32
+        ]
+      }
+    }
+  },
+  "backgrounds": {
+    "campus_far": {
+      "image": "backgrounds/campus_far.png",
+      "scroll_factor": 0.15,
+      "loop_x": true,
+      "size": [
+        1024,
+        256
+      ]
+    },
+    "campus_mid": {
+      "image": "backgrounds/campus_mid.png",
+      "scroll_factor": 0.35,
+      "loop_x": true,
+      "size": [
+        1024,
+        256
+      ]
+    },
+    "campus_near": {
+      "image": "backgrounds/campus_near.png",
+      "scroll_factor": 0.6,
+      "loop_x": true,
+      "size": [
+        1024,
+        256
+      ]
+    }
+  },
+  "props": {
+    "campus_corridor": {
+      "image": "props/campus_corridor.png",
+      "cell_size": [
+        128,
+        128
+      ],
+      "columns": 4,
+      "rows": 2,
+      "assets": {
+        "fluorescent_off": {
+          "rect": [
+            0,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "fluorescent_on": {
+          "rect": [
+            128,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "railing": {
+          "rect": [
+            256,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "drinking_water_station": {
+          "rect": [
+            384,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "concrete_bench": {
+          "rect": [
+            0,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "tropical_planter": {
+          "rect": [
+            128,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "maintenance_door_closed": {
+          "rect": [
+            256,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "maintenance_door_open": {
+          "rect": [
+            384,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        }
+      }
+    },
+    "lecture_room": {
+      "image": "props/lecture_room.png",
+      "cell_size": [
+        128,
+        128
+      ],
+      "columns": 4,
+      "rows": 2,
+      "assets": {
+        "podium": {
+          "rect": [
+            0,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "whiteboard": {
+          "rect": [
+            128,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "student_desk": {
+          "rect": [
+            256,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "student_chair": {
+          "rect": [
+            384,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "projector": {
+          "rect": [
+            0,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "screen_rolled": {
+          "rect": [
+            128,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "screen_lowered": {
+          "rect": [
+            256,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "unclaimed_quizzes": {
+          "rect": [
+            384,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        }
+      }
+    },
+    "computer_lab": {
+      "image": "props/computer_lab.png",
+      "cell_size": [
+        128,
+        128
+      ],
+      "columns": 4,
+      "rows": 3,
+      "assets": {
+        "monitor_off": {
+          "rect": [
+            0,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "monitor_on": {
+          "rect": [
+            128,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "pc_tower": {
+          "rect": [
+            256,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "keyboard": {
+          "rect": [
+            384,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "lab_desk": {
+          "rect": [
+            0,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "rolling_chair": {
+          "rect": [
+            128,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "wall_cable_trunking": {
+          "rect": [
+            256,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "server_rack": {
+          "rect": [
+            384,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "card_reader_locked": {
+          "rect": [
+            0,
+            256,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "card_reader_unlocked": {
+          "rect": [
+            128,
+            256,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        }
+      }
+    },
+    "library": {
+      "image": "props/library.png",
+      "cell_size": [
+        128,
+        128
+      ],
+      "columns": 4,
+      "rows": 3,
+      "assets": {
+        "tall_bookshelf": {
+          "rect": [
+            0,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "short_bookshelf": {
+          "rect": [
+            128,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "return_cart": {
+          "rect": [
+            256,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "reading_desk": {
+          "rect": [
+            384,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "reading_lamp_off": {
+          "rect": [
+            0,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "reading_lamp_on": {
+          "rect": [
+            128,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "archive_cabinet_closed": {
+          "rect": [
+            256,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "archive_cabinet_open": {
+          "rect": [
+            384,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "movable_bookshelf_closed": {
+          "rect": [
+            0,
+            256,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "movable_bookshelf_shifted": {
+          "rect": [
+            128,
+            256,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        }
+      }
+    },
+    "student_activity_room": {
+      "image": "props/student_activity_room.png",
+      "cell_size": [
+        128,
+        128
+      ],
+      "columns": 4,
+      "rows": 2,
+      "assets": {
+        "club_notice_board": {
+          "rect": [
+            0,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "folding_table": {
+          "rect": [
+            128,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "stacked_plastic_chairs": {
+          "rect": [
+            256,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "trophy_cabinet": {
+          "rect": [
+            384,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "badminton_racket_bag": {
+          "rect": [
+            0,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        },
+        "lost_and_found_box": {
+          "rect": [
+            128,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            124
+          ]
+        }
+      }
+    }
+  },
+  "foreground": {
+    "image": "foreground/campus_foreground.png",
+    "cell_size": [
+      64,
+      128
+    ],
+    "columns": 6,
+    "rows": 1,
+    "assets": {
+      "concrete_column_edge": {
+        "rect": [
+          0,
+          0,
+          64,
+          128
+        ],
+        "anchor": [
+          32,
+          128
+        ]
+      },
+      "metal_railing": {
+        "rect": [
+          64,
+          0,
+          64,
+          128
+        ],
+        "anchor": [
+          32,
+          128
+        ]
+      },
+      "hanging_tropical_leaves": {
+        "rect": [
+          128,
+          0,
+          64,
+          128
+        ],
+        "anchor": [
+          32,
+          128
+        ]
+      },
+      "overhead_cable_bundle": {
+        "rect": [
+          192,
+          0,
+          64,
+          128
+        ],
+        "anchor": [
+          32,
+          128
+        ]
+      },
+      "doorframe_edge": {
+        "rect": [
+          256,
+          0,
+          64,
+          128
+        ],
+        "anchor": [
+          32,
+          128
+        ]
+      },
+      "half_raised_metal_shutter": {
+        "rect": [
+          320,
+          0,
+          64,
+          128
+        ],
+        "anchor": [
+          32,
+          128
+        ]
+      }
+    }
+  }
+}
