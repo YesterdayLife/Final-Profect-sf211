@@ -1,4 +1,19 @@
 {
+  "player/player_hurt_defeat.png": {
+    "columns": 4,
+    "rows": ["player_hurt", "player_defeat"],
+    "anchor": [0.5, 0.92]
+  },
+  "player/player_combat_jump.png": {
+    "columns": 4,
+    "rows": ["player_jump", "player_double_jump", "light_attack", "heavy_attack"],
+    "anchor": [0.5, 0.9]
+  },
+  "player/player_idle": {
+    "columns": 4,
+    "rows": ["idle"],
+    "anchor": [0.5, 0.9]
+  },
   "player/player_walk.png": {
     "columns": 8,
     "rows": [
