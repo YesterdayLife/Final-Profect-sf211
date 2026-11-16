@@ -41,3 +41,39 @@ class Animator:
         else:
             index = min(index, len(frames) - 1)
         return frames[index]
+
+
+class ShadowRenderer:
+    """วาดเงากลมใต้ตัวละคร ขนาดและความเข้มขึ้นกับความสูงจากพื้น"""
+
+    def __init__(self, base_width=64, base_height=20, max_height=220,
+                 min_scale=0.45, max_alpha=150, min_alpha=50):
+        self.base_width = base_width    # ความกว้างเงาตอนอยู่บนพื้น
+        self.base_height = base_height  # ความสูงเงา (แบนๆ ให้ดูเป็นวงรี)
+        self.max_height = max_height    # ความสูงที่เงาเล็ก/จางสุด
+        self.min_scale = min_scale      # สัดส่วนขนาดต่ำสุดตอนอยู่สูงสุด
+        self.max_alpha = max_alpha      # ความเข้มตอนอยู่บนพื้น
+        self.min_alpha = min_alpha      # ความเข้มตอนอยู่สูงสุด
+        self._cache = {}
+
+    def _get_surface(self, width, height, alpha):
+        key = (width, height, alpha)
+        surface = self._cache.get(key)
+        if surface is None:
+            surface = pygame.Surface((width, height), pygame.SRCALPHA)
+            pygame.draw.ellipse(surface, (0, 0, 0, alpha), surface.get_rect())
+            self._cache[key] = surface
+        return surface
+
+    def draw(self, screen, x, ground_y, height_above_ground):
+        t = max(0.0, min(1.0, height_above_ground / self.max_height))
+        scale = 1.0 - (1.0 - self.min_scale) * t
+        alpha = round(self.max_alpha + (self.min_alpha - self.max_alpha) * t)
+
+        # ปัดค่าเป็นขั้นๆ เพื่อไม่ให้ cache โตเรื่อยๆ
+        width = max(2, round(self.base_width * scale / 2) * 2)
+        height = max(2, round(self.base_height * scale / 2) * 2)
+        alpha = alpha // 5 * 5
+
+        surface = self._get_surface(width, height, alpha)
+        screen.blit(surface, surface.get_rect(center=(round(x), round(ground_y))))

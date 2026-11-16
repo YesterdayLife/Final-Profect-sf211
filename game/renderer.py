@@ -1,6 +1,7 @@
 """Draw the arena, combat effects and game screens."""
 import math
 import pygame
+from game.animation import ShadowRenderer  # [เงา]
 from game.settings import ASSETS, TEXT_COLOR
 
 
@@ -22,6 +23,8 @@ class Renderer:
         self.shake_duration = 0.0
         self.shake_strength = 0.0
         self.shake_clock = 0.0
+        self.shadow = ShadowRenderer()  # [เงา] เงาผู้เล่น
+        self.boss_shadow = ShadowRenderer(base_width=70, base_height=18, max_alpha=170)  # [เงา] เงาบอส Midterm
 
     def shake(self, strength, duration):
         # Preserve an already stronger shake if several impacts land at once.
@@ -67,6 +70,12 @@ class Renderer:
         self.screen = self.world
         camera_x = max(0, min(player.position.x - self.screen.get_width() // 2, max(0, self.background.get_width() - self.screen.get_width())))
         self.screen.blit(self.background, (-round(camera_x), 0))
+
+        # [เงา] เงาผู้เล่น: ติดพื้นเสมอ ย่อและจางลงตามความสูงที่กระโดด
+        ground_y = player.ground_y
+        self.shadow.draw(self.screen, player.position.x - camera_x, ground_y - 2,
+                         ground_y - player.position.y)
+
         frame = player.animator.current_frame()
         image = frame.image
         anchor_x, anchor_y = frame.anchor
@@ -103,6 +112,12 @@ class Renderer:
             name = self.BOSS_ANIMATIONS[boss.phase][controller.skill if controller.state == "charging" else None]
             boss_index = int(self.elapsed * 6)
         boss_y = boss.position.y if boss.phase == 1 else boss.position.y - 65
+
+        # [เงา] เงาบอส: วาดเฉพาะร่าง Midterm (ร่าง Final มีเงาในภาพแอนิเมชันอยู่แล้ว)
+        if boss.phase == 1:
+            self.boss_shadow.draw(self.screen, boss.position.x - camera_x,
+                                  boss.position.y - 8, 0)
+
         # Idle art faces left; walking, attacks and Final art face right.
         sprite_faces_left = name == "midterm_idle"
         self.draw_atlas(name, (boss.position.x, boss_y), 170, boss_index, camera_x,
